@@ -34,6 +34,12 @@ docker pull felipe2p05/springboot-app
 3. En la raíz del proyecto, ejecutar:
 
 ```bash
+docker compose up --build
+```
+
+o alternativa moderna:
+
+```bash
 docker-compose up --build
 ```
 
