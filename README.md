@@ -8,14 +8,24 @@ Este proyecto despliega una aplicación web fullstack contenedorizada, compuesta
 
 ---
 
+## Clonar o descargar este repositorio
+
+Antes de iniciar, clonar este repositorio o descarga el `.zip` desde GitHub:
+
+```bash
+git clone https://github.com/FepDev25/Despliegue-practica.git
+cd Despliegue-practica
+```
+---
+
 ## Descarga de imágenes desde Docker Hub
 
-Antes de ejecutar el entorno, asegúrate de tener disponibles las imágenes del frontend y backend. Puedes descargarlas manualmente desde Docker Hub:
+Asegúrate de tener disponibles las imágenes del frontend y backend. Puedes descargarlas manualmente desde Docker Hub:
 
-- **Frontend (Angular + Nginx)**  
+* **Frontend (Angular + Nginx)**
   [https://hub.docker.com/repository/docker/felipe2p05/angular-client](https://hub.docker.com/repository/docker/felipe2p05/angular-client)
 
-- **Backend (Spring Boot)**  
+* **Backend (Spring Boot)**
   [https://hub.docker.com/repository/docker/felipe2p05/springboot-app](https://hub.docker.com/repository/docker/felipe2p05/springboot-app)
 
 O usando los siguientes comandos:
@@ -25,25 +35,26 @@ docker pull felipe2p05/angular-client
 docker pull felipe2p05/springboot-app
 ```
 
-## Cómo ejecutar
+---
 
-1. Clona este repositorio o descomprimir el `.zip`.
+##  Cómo ejecutar
 
-2. Tener Docker y Docker Compose instalados.
+1. Asegúrate de tener Docker y Docker Compose instalados.
 
-3. En la raíz del proyecto, ejecutar:
-
-```bash
-docker compose up --build
-```
-
-o alternativa moderna:
+2. En la raíz del proyecto (donde está `docker-compose.yml`), ejecuta:
 
 ```bash
-docker-compose up --build
+docker compose up
 ```
 
-4. Abre en el navegador:
+> O si usas la versión clásica:
 
-* Cliente Angular: [http://localhost:4200](http://localhost:4200)
-* API Backend: [http://localhost:8080](http://localhost:8080)
+```bash
+docker-compose up
+```
+
+3. Accede a los servicios desde tu navegador:
+
+* **Cliente Angular**: [http://localhost:4200](http://localhost:4200)
+* **API Backend**: [http://localhost:8080](http://localhost:8080)
+
