@@ -18,9 +18,9 @@ cd Despliegue-practica
 ```
 ---
 
-## Descarga de imágenes desde Docker Hub
+## Descargar las imágenes desde Docker Hub
 
-Asegúrate de tener disponibles las imágenes del frontend y backend. Puedes descargarlas manualmente desde Docker Hub:
+Se debe tener disponibles las imágenes del frontend y backend. Se pueden descargar manualmente desde Docker Hub:
 
 * **Frontend (Angular + Nginx)**
   [https://hub.docker.com/repository/docker/felipe2p05/angular-client](https://hub.docker.com/repository/docker/felipe2p05/angular-client)
@@ -39,9 +39,9 @@ docker pull felipe2p05/springboot-app
 
 ##  Cómo ejecutar
 
-1. Asegúrate de tener Docker y Docker Compose instalados.
+1. Se debe tener Docker y Docker Compose instalados.
 
-2. En la raíz del proyecto (donde está `docker-compose.yml`), ejecuta:
+2. En la raíz del proyecto (donde está `docker-compose.yml`), ejecutar:
 
 ```bash
 docker compose up
