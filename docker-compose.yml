@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   db:
     image: postgres:15
@@ -14,7 +16,7 @@ services:
       - spring-net
 
   backend:
-    build: ./tarea
+    image: felipe2p05/springboot-app
     container_name: springboot-app
     depends_on:
       - db
@@ -29,7 +31,7 @@ services:
       - spring-net
 
   frontend:
-    build: ./frontend
+    image: felipe2p05/angular-client
     container_name: angular-client
     depends_on:
       - backend
